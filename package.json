@@ -1,0 +1,33 @@
+{
+  "name": "sample-cypress",
+  "version": "1.0.0",
+  "description": "Sample Cypress Test Script",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "e2e:chrome": "cypress run --browser chrome",
+    "cy:verify": "cypress verify",
+    "cy:info": "cypress info",
+    "cy:version": "cypress version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcunday/sample-cypress.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Richard Cunday",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rcunday/sample-cypress/issues"
+  },
+  "homepage": "https://github.com/rcunday/sample-cypress#readme",
+  "devDependencies": {
+    "cypress": "^12.17.2"
+  },
+  "engines": {
+    "node": "^16.0.0 || >=18.0.0"
+  }
+}
