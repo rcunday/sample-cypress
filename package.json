@@ -6,10 +6,10 @@
   "scripts": {
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "e2e:chrome": "cypress run --browser chrome",
     "cy:verify": "cypress verify",
     "cy:info": "cypress info",
-    "cy:version": "cypress version"
+    "cy:version": "cypress version",
+    "e2e:chrome": "cypress run --browser chrome"
   },
   "repository": {
     "type": "git",

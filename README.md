@@ -1,6 +1,7 @@
 # Sample Cypress Test Script
 
-This is a simplified example that is a learning excercise to gain a better understanding of [Cypress.io](https://www.cypress.io/) testing.  This example leverages the public Cypress.io kitchen website and was forked from [Cypress Example Kitchen Sink] (https://github.com/cypress-io/cypress-example-kitchensink/)
+This is a simplified example that is a learning excercise to gain a better understanding of [Cypress.io](https://www.cypress.io/) testing.  This example directly leverages the public Cypress.io kitchen website and was based on [Cypress Example Kitchen Sink] (https://github.com/cypress-io/cypress-example-kitchensink/) rather than spinning up a local
+instance of the web application.
 
 
 ```bash

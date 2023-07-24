@@ -1,0 +1,27 @@
+{
+  "userDetails": {
+    "userEmail": "test-user@nowhere.com",
+    "userPassword": "somepassword",
+    "userFirstName": "Tom",
+    "userLastName": "Hanks",
+    "phoneNumber": "18005551234",
+    "username": "thanks",
+    "userId": 1994
+  },
+  "actionDetails": {
+    "actionFruits": {
+      "multipleSelectItems": [
+        "apples",
+        "oranges",
+        "bananas"
+      ],
+      "multipleSelectValues": [
+        "fr-apples",
+        "fr-oranges",
+        "fr-bananas"
+      ],
+      "singleSelectItem": "apples",
+      "singleSelectValue": "fr-apples"
+    }
+  }
+}
