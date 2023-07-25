@@ -7,10 +7,10 @@ context("Actions", function () {
   })
 
   beforeEach("Navigate to Command Actions", function () {
+    cy.visit("/commands/actions")
     cy.fixture("testdata.json").then(function (testdata) {
       this.testdata = testdata
     })
-    cy.visit("/commands/actions")
   })
 
   it("Use custom command to type in user email from test data", function () {

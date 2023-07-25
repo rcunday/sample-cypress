@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import './data-commands/action-methods'
+import './data-commands/api-methods'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

@@ -23,5 +23,15 @@
       "singleSelectItem": "apples",
       "singleSelectValue": "fr-apples"
     }
+  },
+  "apiDetails": {
+    "usernames": [
+      "Bret",
+      "Antonette",
+      "Samantha"
+    ]
+  },
+  "uiDetails": {
+    "homeTitlePage": "Cypress.io: Kitchen Sink"
   }
 }
