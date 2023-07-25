@@ -9,6 +9,7 @@
     "cy:verify": "cypress verify",
     "cy:info": "cypress info",
     "cy:version": "cypress version",
+    "cy:cache:list": "cypress cache list",
     "e2e:chrome": "cypress run --browser chrome"
   },
   "repository": {
@@ -25,7 +26,8 @@
   },
   "homepage": "https://github.com/rcunday/sample-cypress#readme",
   "devDependencies": {
-    "cypress": "^12.17.2"
+    "cypress": "^12.17.2",
+    "cypress-map": "1.21.0"
   },
   "engines": {
     "node": "^16.0.0 || >=18.0.0"

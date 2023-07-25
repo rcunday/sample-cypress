@@ -17,11 +17,11 @@ Cypress.Commands.add("typeUserEmail", (userDetails) => {
 })
 
 /**
- * Method to select multiple friut items
+ * Method to select multiple friut items with map query
  * @argument actionDetails
  */
 Cypress.Commands.add("selectMultiFruits", (actionDetails) => {
-    cy.log(actionDetails.actionFruits.multipleSelectItems)
+    cy.wrap(actionDetails.actionFruits.multipleSelectItems).print()
     actionLocators
     .actionSelectMultiple()
     .should("exist")
@@ -36,7 +36,7 @@ Cypress.Commands.add("selectMultiFruits", (actionDetails) => {
  * @argument actionDetails
  */
 Cypress.Commands.add("selectSingleFruit", (actionDetails) => {
-    cy.log(actionDetails.actionFruits.singleSelectItem)
+    cy.wrap(actionDetails.actionFruits.singleSelectValue).print()
     actionLocators
     .actionSelectSingle()
     .should("exist")

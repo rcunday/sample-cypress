@@ -7,16 +7,17 @@
 //
 // You can change the location of this file or turn off
 // automatically serving support files with the
-// 'supportFile' configuration option.
+// "supportFile" configuration option.
 //
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
-
+// cypress map plug-in
+import "cypress-map"
 // Import commands.js using ES2015 syntax:
-import './commands'
-import './data-commands/action-methods'
-import './data-commands/api-methods'
+import "./commands"
+import "./data-commands/action-methods"
+import "./data-commands/api-methods"
 
 // Alternatively you can use CommonJS syntax:
-// require('./commands')
+// require("./commands")
