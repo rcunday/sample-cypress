@@ -33,5 +33,14 @@
   },
   "uiDetails": {
     "homeTitlePage": "Cypress.io: Kitchen Sink"
+  },
+  "traversalDetails": {
+    "cats": [
+      "tabby",
+      "siamese",
+      "persian",
+      "sphynx",
+      "burmese"
+    ]
   }
 }
