@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 describe("% notation", () => {
     it("prints a number by default", () => {
       cy.wrap(42)

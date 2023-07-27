@@ -1,5 +1,3 @@
-/// <reference types="cypress"/>
-
 context("Traversal", function () {
   beforeEach("Navigate to Traversal Content", function () {
     cy.visit("/commands/traversal")

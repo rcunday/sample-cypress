@@ -32,4 +32,7 @@ npx cypress run --record --key your-API-key-value-here
 
 # launch the cypress test runner
 npm run cy:open
+
+# or run all the cypress specs using the cli runner
+npm run cy:run
 ```

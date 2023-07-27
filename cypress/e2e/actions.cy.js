@@ -1,5 +1,3 @@
-/// <reference types="cypress"/>
-
 context("Actions", function () {
   before(function () {
     cy.clearAllLocalStorage()

@@ -1,4 +1,3 @@
-
 import { ActionLocators } from "../element-locators/action-locators"    
 const actionLocators = new ActionLocators();
 

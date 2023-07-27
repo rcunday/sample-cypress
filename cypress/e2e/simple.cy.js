@@ -1,5 +1,3 @@
-/// <reference types="cypress"/>
-
 context("Simple", function() {
   before("Obtain Verification Data", function () {
     cy.fixture("testdata.json").then(function (testdata) {
