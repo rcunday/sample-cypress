@@ -14,4 +14,22 @@ context('Traversal', function () {
       .then(getListItems)
       .should('deep.equal', this.testdata.traversalDetails.cats)
   })
+
+  it('use cypress plugin map list items and compare against test data', function () {
+    cy.get('.traversal-list>li')
+      .map('innerText')
+      .should('deep.equal', this.testdata.traversalDetails.cats)
+  })
+
+  it('navigate breadcrumbs', function () {
+    cy.get('.traversal-breadcrumb>li').each(($item) => {
+      if ($item.hasClass('active')) {
+        cy.log($item.text() + ' breadcrumb is active')
+      } else {
+        cy.log($item.text() + ' breadcrumb is NOT active')
+      }
+    })
+  })
+
+  
 })

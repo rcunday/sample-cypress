@@ -6,6 +6,16 @@ context('Actions', function () {
 
   beforeEach('Navigate to Command Actions', function () {
     cy.visit('/commands/actions')
+
+    //cy.location('pathname').should('equal','/commands/actions')
+
+    cy.location().should((location) => {
+      expect(location.hash).to.be.empty
+      expect(location.pathname).to.eq('/commands/actions')
+      expect(location.port).to.eq('')
+      expect(location.protocol).to.eq('https:')
+    })
+
     cy.fixture('testdata.json').then(function (testdata) {
       this.testdata = testdata
     })

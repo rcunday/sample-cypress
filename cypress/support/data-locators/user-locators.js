@@ -7,6 +7,7 @@ export class UserLocators {
           .map('username')
           .take(apiDetails.usernames.length)
           .value()
+          
         expect(usernames).to.deep.eq(apiDetails.usernames)
       })
   }
