@@ -5,9 +5,9 @@ context('Actions', function () {
   })
 
   beforeEach('Navigate to Command Actions', function () {
+    cy.intercept('/commands/actions').as('actions')
     cy.visit('/commands/actions')
-
-    //cy.location('pathname').should('equal','/commands/actions')
+    cy.wait('@actions')
 
     cy.location().should((location) => {
       expect(location.hash).to.be.empty

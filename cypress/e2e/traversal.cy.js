@@ -1,6 +1,8 @@
 context('Traversal', function () {
   beforeEach('Navigate to Traversal Content', function () {
+    cy.intercept('/commands/traversal').as('traversal')
     cy.visit('/commands/traversal')
+    cy.wait('@traversal')
     cy.fixture('testdata.json').then(function (testdata) {
       this.testdata = testdata
     })
@@ -22,11 +24,11 @@ context('Traversal', function () {
   })
 
   it('navigate breadcrumbs', function () {
-    cy.get('.traversal-breadcrumb>li').each(($item) => {
-      if ($item.hasClass('active')) {
-        cy.log($item.text() + ' breadcrumb is active')
+    cy.get('.traversal-breadcrumb>li').each((item) => {
+      if (item.hasClass('active')) {
+        cy.log(item.text() + ' breadcrumb is active')
       } else {
-        cy.log($item.text() + ' breadcrumb is NOT active')
+        cy.log(item.text() + ' breadcrumb is NOT active')
       }
     })
   })

@@ -6,7 +6,9 @@ context('Simple', function () {
   })
 
   beforeEach(function () {
+    cy.intercept('/').as('home')
     cy.visit('/')
+    cy.wait('@home')
   })
 
   it('check the title content of the page', function () {
