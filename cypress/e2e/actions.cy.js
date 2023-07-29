@@ -22,7 +22,6 @@ context('Actions', function () {
   })
 
   it('Use custom command to type in user email from test data', function () {
-    cy.wait(1000)
     cy.typeUserEmail(this.testdata.userDetails)
   })
 
