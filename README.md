@@ -35,4 +35,7 @@ npm run cy:open
 
 # or run all the cypress specs using the cli runner
 npm run cy:run
+
+# check for lint exceptions
+npm run lint
 ```
