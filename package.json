@@ -13,7 +13,8 @@
     "nvm:set": "nvm use 18.16.0",
     "lint": "npx eslint .",
     "e2e:chrome": "cypress run --browser chrome",
-    "test": "cypress run"
+    "test": "cypress run",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
