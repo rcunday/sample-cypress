@@ -17,8 +17,8 @@
       "plugin:cypress/recommended"
     ],
     "rules": {
-      "chai-friendly/no-unused-expressions": "error",
+      "chai-friendly/no-unused-expressions": "error"
       // Add any additional rules or override the default ones here
-      "cypress/no-unnecessary-waiting": "warn"
+      //"cypress/no-unnecessary-waiting": "warn"
     }
   }
