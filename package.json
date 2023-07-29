@@ -10,8 +10,10 @@
     "cy:info": "cypress info",
     "cy:version": "cypress version",
     "cy:cache:list": "cypress cache list",
+    "nvm:set": "nvm use 18.16.0",
     "lint": "npx eslint .",
-    "e2e:chrome": "cypress run --browser chrome"
+    "e2e:chrome": "cypress run --browser chrome",
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -34,5 +36,9 @@
   },
   "engines": {
     "node": "^16.0.0 || >=18.0.0"
+  },
+  "dependencies": {
+    "husky": "8.0.3",
+    "save-dev": "0.0.1-security"
   }
 }
