@@ -10,6 +10,7 @@
     "cy:info": "cypress info",
     "cy:version": "cypress version",
     "cy:cache:list": "cypress cache list",
+    "lint": "npx eslint .",
     "e2e:chrome": "cypress run --browser chrome"
   },
   "repository": {
@@ -27,7 +28,9 @@
   "homepage": "https://github.com/rcunday/sample-cypress#readme",
   "devDependencies": {
     "cypress": "^12.17.2",
-    "cypress-map": "1.21.0"
+    "cypress-map": "1.21.0",
+    "eslint-plugin-chai-friendly": "0.7.2",
+    "eslint-plugin-cypress": "2.13.3"
   },
   "engines": {
     "node": "^16.0.0 || >=18.0.0"
