@@ -1,4 +1,5 @@
 # Sample Cypress Test Script
+[![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 
 This is a simplified example that is a learning excercise to gain a better understanding of [Cypress.io](https://www.cypress.io/) testing.  This example directly leverages the public Cypress.io kitchen website and was based on [Cypress Example Kitchen Sink] (https://github.com/cypress-io/cypress-example-kitchensink/) rather than spinning up a local
 instance of the web application.
