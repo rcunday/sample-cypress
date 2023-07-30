@@ -35,6 +35,8 @@ context('Actions', function () {
 
   it('Selects the Actions Option from the menu dropdown', function () {
     cy.get('a[data-toggle="dropdown"').click()
-    cy.get('li a').contains('Actions').click()
+    cy.get('li a')
+      .contains('Actions')
+      .should('have.attr', 'href', '/commands/actions')
   })
 })
