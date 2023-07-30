@@ -33,10 +33,19 @@ context('Actions', function () {
     cy.selectSingleFruit(this.testdata.actionDetails)
   })
 
-  it('Selects the Actions Option from the menu dropdown', function () {
+  it('Selects actions option from the menu dropdown', function () {
     cy.get('a[data-toggle="dropdown"').click()
     cy.get('li a')
       .contains('Actions')
       .should('have.attr', 'href', '/commands/actions')
   })
+
+  it('Selects actions option with jquery invoke attr and should', function () {
+    cy.get('a[data-toggle="dropdown"').click()
+    cy.get('li a')
+      .contains('Actions')
+      .invoke('attr','href')
+      .should('equal', '/commands/actions')
+  })
+
 })
