@@ -18,6 +18,7 @@ import "cypress-map"
 import "./commands"
 import "./data-commands/action-methods"
 import "./data-commands/api-methods"
+import "./data-commands/todo-methods"
 import "./util-commands/link-methods"
 import "./util-commands/custom-assertions"
 
