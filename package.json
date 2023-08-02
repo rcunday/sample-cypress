@@ -14,7 +14,8 @@
     "lint": "npx eslint .",
     "e2e:chrome": "cypress run --browser chrome",
     "test": "cypress run",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --write cypress/**/*.js"
   },
   "repository": {
     "type": "git",

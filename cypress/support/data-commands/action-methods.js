@@ -27,7 +27,10 @@ Cypress.Commands.add('selectMultiFruits', (actionDetails) => {
     .should('be.visible')
     .select(actionDetails.actionFruits.multipleSelectItems)
     .invoke('val')
-    .should('deep.equal', actionDetails.actionFruits.multipleSelectValues)
+    .should(
+      'deep.equal',
+      actionDetails.actionFruits.multipleSelectValues,
+    )
 })
 
 /**
@@ -41,5 +44,8 @@ Cypress.Commands.add('selectSingleFruit', (actionDetails) => {
     .should('exist')
     .should('be.visible')
     .select(actionDetails.actionFruits.singleSelectItem)
-    .should('have.value', actionDetails.actionFruits.singleSelectValue)
+    .should(
+      'have.value',
+      actionDetails.actionFruits.singleSelectValue,
+    )
 })

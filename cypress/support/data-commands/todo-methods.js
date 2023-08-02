@@ -1,4 +1,7 @@
-import { ToDoLocators, todoAllItems } from '../element-locators/todo-locators'
+import {
+  ToDoLocators,
+  todoAllItems,
+} from '../element-locators/todo-locators'
 const todoLocators = new ToDoLocators()
 
 Cypress.Commands.add('addTodo', (text) => {

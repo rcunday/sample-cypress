@@ -1,4 +1,3 @@
-
 export const todoAllItems = '.todo-list li'
 
 export class ToDoLocators {

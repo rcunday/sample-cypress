@@ -13,14 +13,14 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 // cypress map plug-in
-import "cypress-map"
+import 'cypress-map'
 // Import commands.js using ES2015 syntax:
-import "./commands"
-import "./data-commands/action-methods"
-import "./data-commands/api-methods"
-import "./data-commands/todo-methods"
-import "./util-commands/link-methods"
-import "./util-commands/custom-assertions"
+import './commands'
+import './data-commands/action-methods'
+import './data-commands/api-methods'
+import './data-commands/todo-methods'
+import './util-commands/link-methods'
+import './util-commands/custom-assertions'
 
 // Alternatively you can use CommonJS syntax:
 // require("./commands")

@@ -12,6 +12,9 @@ context('Simple', function () {
   })
 
   it('check the title content of the page', function () {
-    cy.title().should('eq', this.testdata.uiDetails.homeTitlePage)
+    cy.title().should(
+      'eq',
+      this.testdata.uiDetails.homeTitlePage,
+    )
   })
 })

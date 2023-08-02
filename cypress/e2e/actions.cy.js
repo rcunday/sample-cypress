@@ -44,8 +44,7 @@ context('Actions', function () {
     cy.get('a[data-toggle="dropdown"').click()
     cy.get('li a')
       .contains('Actions')
-      .invoke('attr','href')
+      .invoke('attr', 'href')
       .should('equal', '/commands/actions')
   })
-
 })

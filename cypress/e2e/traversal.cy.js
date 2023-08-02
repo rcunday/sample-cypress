@@ -32,6 +32,4 @@ context('Traversal', function () {
       }
     })
   })
-
-  
 })

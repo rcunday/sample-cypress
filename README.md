@@ -31,6 +31,9 @@ npx cypress run --record --key your-API-key-value-here
     'projectId':'your-6-char-project-key-value-here',
     ...
 
+# list npm run script commands available
+npm run
+
 # launch the cypress test runner
 npm run cy:open
 
@@ -39,4 +42,8 @@ npm run cy:run
 
 # check for lint exceptions
 npm run lint
+
+# format code with prettier where prettier was installed -g (globally)
+npm run format
+
 ```
